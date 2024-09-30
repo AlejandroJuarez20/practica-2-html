@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>   
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subir Información de la bicicleta</h1>
+    <form action="datos.html">
+
+        <label for="nombre">Nombre de la bicicleta</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="especie">Categoria</label>
+        <select id="especie" name="especie">
+            <option value="Ruta">aluminio</option>
+            <option value="Carreras">Fibra de carbono</option>
+        </select><br><br>
+
+        <input type="checkbox" id="Disponible" name="Disponible">
+        <label for="Disponible">Esta Disponible</label><br><br>
+
+        <label>tipo</label>
+        <br>
+        <input type="radio" id="Carreras" name="Tipo" value="Carreras">
+        <label for="Carreras">Carreras</label>
+        <input type="radio" id="Ruta" name="Tipo" value="Ruta">
+        <label for="Ruta">Ruta</label><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
